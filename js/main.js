@@ -77,7 +77,7 @@ $(document).ready(function() {
     );
  
     /* 新闻推荐不感兴趣 */ 
-    $('#dustBin').on('click',function(){   //点击不感兴趣时
+    $('.uninterested').on('click',function(){   //点击不感兴趣时
         var msg=confirm('确定不感兴趣吗？'+'\n'+'以后这类信息会少出现哒！(=￣ω￣=)✧');
         if(msg==true){     
             $(this).parents('li').remove();  //确定不感兴趣时移除相应头条
